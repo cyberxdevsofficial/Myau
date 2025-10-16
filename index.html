@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anuga AI V3 — Offline Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Anuga AI V3</h1>
+      <p>Offline bilingual (EN + SI) assistant — Light AI Background</p>
+    </header>
+
+    <main>
+      <div class="controls">
+        <label>Language:
+          <select id="lang">
+            <option value="en">English</option>
+            <option value="si">Sinhala</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="chat" id="chat"></div>
+
+      <form id="inputForm">
+        <input id="userInput" placeholder="Ask me anything..." autocomplete="off" />
+        <button type="submit">Ask</button>
+      </form>
+
+      <details class="kb">
+        <summary>About the built-in knowledge base</summary>
+        <p>This app dynamically loads <code>knowledge.json</code> containing 100,000 bilingual Q&A entries.</p>
+      </details>
+    </main>
+
+    <footer>
+      <small>Created by Anuga Senithu © 2025</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
